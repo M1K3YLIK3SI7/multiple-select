@@ -1,6 +1,6 @@
 /**
  * @author zhixin wen <wenzhixin2010@gmail.com>
- * @version 1.2.1.1
+ * @version 1.2.1.2
  * Forked Version
  * http://wenzhixin.net.cn/p/multiple-select/
  */
@@ -422,12 +422,6 @@
             this.$selectAll.parent().show();
             this.$noResults.hide();
 
-            // Fix #77: 'All selected' when no options
-            if (!this.$el.children().length) {
-                this.$selectAll.parent().hide();
-                this.$noResults.show();
-            }
-
             if (this.options.container) {
                 var offset = this.$drop.offset();
                 this.$drop.appendTo($(this.options.container));
@@ -442,6 +436,13 @@
                 this.$searchInput.focus();
                 this.filter();
             }
+
+            // Fix #77: 'All selected' when no options
+            if (!this.$el.children().length) {
+                this.$selectAll.parent().hide();
+                this.$noResults.show();
+            }
+
             this.options.onOpen();
         },
 
