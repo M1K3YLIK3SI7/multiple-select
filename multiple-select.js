@@ -1,7 +1,7 @@
 /**
  * @author zhixin wen <wenzhixin2010@gmail.com>
- * @version 1.2.1
- *
+ * @version 1.2.1.1
+ * Forked Version
  * http://wenzhixin.net.cn/p/multiple-select/
  */
 
@@ -210,10 +210,12 @@
                 $ul.append([
                     '<li class="ms-select-all">',
                     '<label>',
-                    sprintf('<input type="checkbox" %s /> ', this.selectAllName),
+                    sprintf('<input type="checkbox" %s />', this.selectAllName),
+                    '<span>',
                     this.options.selectAllDelimiter[0],
                     this.options.selectAllText,
                     this.options.selectAllDelimiter[1],
+                    '</span>',
                     '</label>',
                     '</li>'
                 ].join(''));
