@@ -1,5 +1,8 @@
 ## Changelog
 
+### 1.2.1.1 Custom Forked version
+* [bug] Removed space from leading space from Select All and include span around text
+
 ### 1.2.1
 
 * [bug] Fix #84: single select with Optgroups bug.
