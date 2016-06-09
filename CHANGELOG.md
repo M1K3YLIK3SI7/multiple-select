@@ -1,7 +1,10 @@
 ## Changelog
 
+### 1.2.1.2 Custom Forked version
+* [bug] Fix issue using Filter with no items causing Select All to be displayed.
+
 ### 1.2.1.1 Custom Forked version
-* [bug] Removed space from leading space from Select All and include span around text
+* [bug] Removed space from leading space from Select All and include span around text.
 
 ### 1.2.1
 
